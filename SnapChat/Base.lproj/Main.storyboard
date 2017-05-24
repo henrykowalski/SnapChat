@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -94,11 +94,82 @@
                                 <action selector="logoutTapped:" destination="IA2-xC-eX6" id="F0t-3g-y13"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6tN-TK-jq2">
+                            <connections>
+                                <segue destination="Veo-YA-e6N" kind="show" id="BBa-G1-vgg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCz-g3-KHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2115" y="77.112676056338032"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="ji4-JX-Gwp">
+            <objects>
+                <viewController id="Veo-YA-e6N" customClass="PictureViewController" customModule="SnapChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ks-6n-ybb"/>
+                        <viewControllerLayoutGuide type="bottom" id="syp-QB-FuB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gyF-5m-jJt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ody-Ji-vAc">
+                                <rect key="frame" x="40" y="84" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0co-xp-D6w">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="4En-ie-rMm"/>
+                                            <constraint firstAttribute="height" constant="128" id="wd0-7Y-iab"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-Qq-Bbf">
+                                <rect key="frame" x="40" y="227" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMT-fH-8Wv">
+                                <rect key="frame" x="144" y="272" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="Veo-YA-e6N" eventType="touchUpInside" id="dJA-Dz-qdO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NMT-fH-8Wv" firstAttribute="top" secondItem="cbd-Qq-Bbf" secondAttribute="bottom" constant="15" id="CoG-cb-jnh"/>
+                            <constraint firstItem="cbd-Qq-Bbf" firstAttribute="top" secondItem="0co-xp-D6w" secondAttribute="bottom" constant="15" id="FPf-Cj-L4c"/>
+                            <constraint firstItem="NMT-fH-8Wv" firstAttribute="centerX" secondItem="gyF-5m-jJt" secondAttribute="centerX" id="Uwu-Qd-xaW"/>
+                            <constraint firstItem="cbd-Qq-Bbf" firstAttribute="centerX" secondItem="gyF-5m-jJt" secondAttribute="centerX" id="YAf-EU-ndN"/>
+                            <constraint firstItem="cbd-Qq-Bbf" firstAttribute="centerX" secondItem="gyF-5m-jJt" secondAttribute="centerX" id="ZIV-K2-4OM"/>
+                            <constraint firstItem="cbd-Qq-Bbf" firstAttribute="width" secondItem="0co-xp-D6w" secondAttribute="width" id="i1D-ac-eEZ"/>
+                            <constraint firstItem="Ody-Ji-vAc" firstAttribute="centerX" secondItem="gyF-5m-jJt" secondAttribute="centerX" id="wl1-fa-SZu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vBs-xb-dOf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="mlb-YH-hiT">
+                            <connections>
+                                <action selector="cametaTapped:" destination="Veo-YA-e6N" id="INZ-lS-lcj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="cbd-Qq-Bbf" id="Wfd-YH-bAb"/>
+                        <outlet property="imageView" destination="0co-xp-D6w" id="3Tn-H2-W3e"/>
+                        <outlet property="nextButton" destination="NMT-fH-8Wv" id="djr-wd-I0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOR-QW-UFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2869" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uDY-r7-6VT">
