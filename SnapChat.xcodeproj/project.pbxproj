@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4888AEA49CDC3EF3B06E861E /* Pods_SnapChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36EE648BF31DD2D3EB0EA80 /* Pods_SnapChat.framework */; };
+		FE01AFD81EDC22A70059985D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01AFD71EDC22A70059985D /* User.swift */; };
 		FE2FF4381EC1350100FC4A5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE2FF4371EC1350100FC4A5B /* GoogleService-Info.plist */; };
 		FE5E5FA51EBF3DBC00712E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E5FA41EBF3DBC00712E67 /* AppDelegate.swift */; };
 		FE5E5FA71EBF3DBC00712E67 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E5FA61EBF3DBC00712E67 /* SignInViewController.swift */; };
@@ -23,6 +24,7 @@
 		1A3052D1862BCD576DB3D506 /* Pods-SnapChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChat/Pods-SnapChat.debug.xcconfig"; sourceTree = "<group>"; };
 		A36EE648BF31DD2D3EB0EA80 /* Pods_SnapChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC74B3D7AA3964AF6DA357F5 /* Pods-SnapChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChat/Pods-SnapChat.release.xcconfig"; sourceTree = "<group>"; };
+		FE01AFD71EDC22A70059985D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FE2FF4371EC1350100FC4A5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE5E5FA11EBF3DBC00712E67 /* SnapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5E5FA41EBF3DBC00712E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FE01AFD91EDC22D60059985D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E5FA61EBF3DBC00712E67 /* SignInViewController.swift */,
+				FE8422621ECBC58D0078AD83 /* SnapsViewController.swift */,
+				FEEED6471ED652BF007C3DC9 /* PictureViewController.swift */,
+				FEFFBDFA1EDB2AD1000C6A94 /* SelectUserViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FE01AFDA1EDC23480059985D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE01AFD71EDC22A70059985D /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		FE5E5F981EBF3DBC00712E67 = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +107,10 @@
 		FE5E5FA31EBF3DBC00712E67 /* SnapChat */ = {
 			isa = PBXGroup;
 			children = (
+				FE01AFD91EDC22D60059985D /* ViewControllers */,
+				FE01AFDA1EDC23480059985D /* Models */,
 				FE5E5FA41EBF3DBC00712E67 /* AppDelegate.swift */,
-				FE5E5FA61EBF3DBC00712E67 /* SignInViewController.swift */,
-				FE8422621ECBC58D0078AD83 /* SnapsViewController.swift */,
 				FE5E5FA81EBF3DBC00712E67 /* Main.storyboard */,
-				FEEED6471ED652BF007C3DC9 /* PictureViewController.swift */,
-				FEFFBDFA1EDB2AD1000C6A94 /* SelectUserViewController.swift */,
 				FE5E5FAB1EBF3DBC00712E67 /* Assets.xcassets */,
 				FE5E5FAD1EBF3DBC00712E67 /* LaunchScreen.storyboard */,
 				FE5E5FB01EBF3DBC00712E67 /* Info.plist */,
@@ -227,6 +246,7 @@
 			files = (
 				FE5E5FA71EBF3DBC00712E67 /* SignInViewController.swift in Sources */,
 				FEEED6481ED652BF007C3DC9 /* PictureViewController.swift in Sources */,
+				FE01AFD81EDC22A70059985D /* User.swift in Sources */,
 				FEFFBDFB1EDB2AD1000C6A94 /* SelectUserViewController.swift in Sources */,
 				FE5E5FA51EBF3DBC00712E67 /* AppDelegate.swift in Sources */,
 				FE8422631ECBC58D0078AD83 /* SnapsViewController.swift in Sources */,
