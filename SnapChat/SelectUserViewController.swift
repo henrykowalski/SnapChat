@@ -16,6 +16,10 @@ class SelectUserViewController: UIViewController,UITableViewDataSource, UITableV
     
     var users : [User] = []
     
+    var imageURL = ""
+    
+    var descrip = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,7 +68,7 @@ class SelectUserViewController: UIViewController,UITableViewDataSource, UITableV
         
         let user = users[indexPath.row]
         
-        let snap = ["from":user.email, "description":"hello", "imageURL":"www.img.com"]
+        let snap = ["from":user.email, "description":descrip, "imageURL":imageURL]
         
         FIRDatabase.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
     }

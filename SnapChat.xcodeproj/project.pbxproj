@@ -16,6 +16,7 @@
 		FE5E5FAC1EBF3DBC00712E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5E5FAB1EBF3DBC00712E67 /* Assets.xcassets */; };
 		FE5E5FAF1EBF3DBC00712E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5E5FAD1EBF3DBC00712E67 /* LaunchScreen.storyboard */; };
 		FE8422631ECBC58D0078AD83 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8422621ECBC58D0078AD83 /* SnapsViewController.swift */; };
+		FEA94BC51EE4BBF8003EFC03 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA94BC41EE4BBF8003EFC03 /* Snap.swift */; };
 		FEEED6481ED652BF007C3DC9 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEED6471ED652BF007C3DC9 /* PictureViewController.swift */; };
 		FEFFBDFB1EDB2AD1000C6A94 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFBDFA1EDB2AD1000C6A94 /* SelectUserViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		FE5E5FAE1EBF3DBC00712E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE5E5FB01EBF3DBC00712E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE8422621ECBC58D0078AD83 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		FEA94BC41EE4BBF8003EFC03 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		FEEED6471ED652BF007C3DC9 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		FEFFBDFA1EDB2AD1000C6A94 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FE01AFD71EDC22A70059985D /* User.swift */,
+				FEA94BC41EE4BBF8003EFC03 /* Snap.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -109,8 +112,8 @@
 			children = (
 				FE01AFD91EDC22D60059985D /* ViewControllers */,
 				FE01AFDA1EDC23480059985D /* Models */,
-				FE5E5FA41EBF3DBC00712E67 /* AppDelegate.swift */,
 				FE5E5FA81EBF3DBC00712E67 /* Main.storyboard */,
+				FE5E5FA41EBF3DBC00712E67 /* AppDelegate.swift */,
 				FE5E5FAB1EBF3DBC00712E67 /* Assets.xcassets */,
 				FE5E5FAD1EBF3DBC00712E67 /* LaunchScreen.storyboard */,
 				FE5E5FB01EBF3DBC00712E67 /* Info.plist */,
@@ -248,6 +251,7 @@
 				FEEED6481ED652BF007C3DC9 /* PictureViewController.swift in Sources */,
 				FE01AFD81EDC22A70059985D /* User.swift in Sources */,
 				FEFFBDFB1EDB2AD1000C6A94 /* SelectUserViewController.swift in Sources */,
+				FEA94BC51EE4BBF8003EFC03 /* Snap.swift in Sources */,
 				FE5E5FA51EBF3DBC00712E67 /* AppDelegate.swift in Sources */,
 				FE8422631ECBC58D0078AD83 /* SnapsViewController.swift in Sources */,
 			);
