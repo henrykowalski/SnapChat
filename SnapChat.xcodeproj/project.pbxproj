@@ -17,6 +17,7 @@
 		FE5E5FAF1EBF3DBC00712E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5E5FAD1EBF3DBC00712E67 /* LaunchScreen.storyboard */; };
 		FE8422631ECBC58D0078AD83 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8422621ECBC58D0078AD83 /* SnapsViewController.swift */; };
 		FEA94BC51EE4BBF8003EFC03 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA94BC41EE4BBF8003EFC03 /* Snap.swift */; };
+		FEA94BC71EE5EE9E003EFC03 /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA94BC61EE5EE9E003EFC03 /* ViewSnapViewController.swift */; };
 		FEEED6481ED652BF007C3DC9 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEED6471ED652BF007C3DC9 /* PictureViewController.swift */; };
 		FEFFBDFB1EDB2AD1000C6A94 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFBDFA1EDB2AD1000C6A94 /* SelectUserViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		FE5E5FB01EBF3DBC00712E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE8422621ECBC58D0078AD83 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		FEA94BC41EE4BBF8003EFC03 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		FEA94BC61EE5EE9E003EFC03 /* ViewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		FEEED6471ED652BF007C3DC9 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		FEFFBDFA1EDB2AD1000C6A94 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				FE8422621ECBC58D0078AD83 /* SnapsViewController.swift */,
 				FEEED6471ED652BF007C3DC9 /* PictureViewController.swift */,
 				FEFFBDFA1EDB2AD1000C6A94 /* SelectUserViewController.swift */,
+				FEA94BC61EE5EE9E003EFC03 /* ViewSnapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				FE5E5FA71EBF3DBC00712E67 /* SignInViewController.swift in Sources */,
 				FEEED6481ED652BF007C3DC9 /* PictureViewController.swift in Sources */,
 				FE01AFD81EDC22A70059985D /* User.swift in Sources */,
+				FEA94BC71EE5EE9E003EFC03 /* ViewSnapViewController.swift in Sources */,
 				FEFFBDFB1EDB2AD1000C6A94 /* SelectUserViewController.swift in Sources */,
 				FEA94BC51EE4BBF8003EFC03 /* Snap.swift in Sources */,
 				FE5E5FA51EBF3DBC00712E67 /* AppDelegate.swift in Sources */,

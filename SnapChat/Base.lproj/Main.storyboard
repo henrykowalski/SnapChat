@@ -115,11 +115,54 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="YnQ-7N-SCh" id="fho-Jl-wWk"/>
+                        <segue destination="lDC-An-RCB" kind="show" identifier="viewsnapsegue" id="rae-cU-yvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCz-g3-KHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2115" y="77.112676056338032"/>
+        </scene>
+        <!--View Snap View Controller-->
+        <scene sceneID="FIa-Jj-V3N">
+            <objects>
+                <viewController id="lDC-An-RCB" customClass="ViewSnapViewController" customModule="SnapChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EsU-QU-LsH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cwz-Pw-gvX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m8C-ca-lDl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is me saying hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjj-Ol-Wb9">
+                                <rect key="frame" x="21" y="537" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BbF-fy-nd2">
+                                <rect key="frame" x="26" y="74" width="268" height="453"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cwz-Pw-gvX" firstAttribute="top" secondItem="Xjj-Ol-Wb9" secondAttribute="bottom" constant="10" id="7I9-VU-Ht5"/>
+                            <constraint firstItem="Xjj-Ol-Wb9" firstAttribute="leading" secondItem="m8C-ca-lDl" secondAttribute="leadingMargin" constant="5" id="8NR-fu-XWm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xjj-Ol-Wb9" secondAttribute="trailing" constant="5" id="Bf4-Us-8Qx"/>
+                            <constraint firstItem="BbF-fy-nd2" firstAttribute="leading" secondItem="m8C-ca-lDl" secondAttribute="leadingMargin" constant="10" id="Iil-TT-7W2"/>
+                            <constraint firstItem="Xjj-Ol-Wb9" firstAttribute="top" secondItem="BbF-fy-nd2" secondAttribute="bottom" constant="10" id="Qw0-t5-sEX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BbF-fy-nd2" secondAttribute="trailing" constant="10" id="kTX-vb-P7g"/>
+                            <constraint firstItem="BbF-fy-nd2" firstAttribute="top" secondItem="EsU-QU-LsH" secondAttribute="bottom" constant="10" id="li8-KU-CJ3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="BbF-fy-nd2" id="ufd-jM-d7r"/>
+                        <outlet property="label" destination="Xjj-Ol-Wb9" id="31O-Gs-afY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3U-0I-Kgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2115" y="883"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="ji4-JX-Gwp">
