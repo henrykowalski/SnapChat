@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 platform :ios, '10.3'
-platform :ios
+# platform :ios
 
 target 'SnapChat' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -18,5 +18,6 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+pod 'SDWebImage'
 
 end
