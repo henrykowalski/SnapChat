@@ -70,7 +70,7 @@ class SelectUserViewController: UIViewController,UITableViewDataSource, UITableV
         
         let user = users[indexPath.row]
         
-        let snap = ["from":user.email, "description":descrip, "imageURL":imageURL, "uuid":uuid]
+        let snap = ["from":FIRAuth.auth()!.currentUser!.email!, "description":descrip, "imageURL":imageURL, "uuid":uuid]
         
         FIRDatabase.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
         

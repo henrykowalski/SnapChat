@@ -42,7 +42,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         nextButton.isEnabled = true
         
         imagePicker.dismiss(animated: true, completion: nil)
-                
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +52,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @IBAction func cametaTapped(_ sender: Any) {
         
-        imagePicker.sourceType = .savedPhotosAlbum
+        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
         
         present(imagePicker, animated: true, completion: nil)
