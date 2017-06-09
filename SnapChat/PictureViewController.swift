@@ -28,7 +28,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         // Do any additional setup after loading the view.
         
         imagePicker.delegate = self
-        
+        nextButton.isEnabled = false
     }
     
     
@@ -39,8 +39,10 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         imageView.backgroundColor = UIColor.clear
         
-        imagePicker.dismiss(animated: true, completion: nil)
+        nextButton.isEnabled = true
         
+        imagePicker.dismiss(animated: true, completion: nil)
+                
     }
 
     override func didReceiveMemoryWarning() {
