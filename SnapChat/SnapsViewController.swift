@@ -10,6 +10,9 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import FirebaseAuth
+// tady pridavam AV foundation kvuli audiu
+import AVFoundation
+
 
 class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -71,6 +74,17 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if snaps.count == 0 {
             return 1
         } else {
+            // Rekne to ze mas new snap :)
+            
+            let mySynthesizer = AVSpeechSynthesizer()
+            let myUtterence = AVSpeechUtterance(string: "new snap")
+            myUtterence.rate = AVSpeechUtteranceMinimumSpeechRate
+            myUtterence.voice = AVSpeechSynthesisVoice(language: "en-au")
+            myUtterence.pitchMultiplier = 2 //between 0.5 and 2.0. Default is 1.0.
+            mySynthesizer.speak(myUtterence)
+            
+            // konec audio vlozky
+            
         return snaps.count
         }
         
@@ -81,7 +95,7 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = UITableViewCell()
         
         if snaps.count == 0 {
-            cell.textLabel?.text = "You have no snaps yet 😬"
+            cell.textLabel?.text = "No snaps baby 😜"
         } else {
         
         

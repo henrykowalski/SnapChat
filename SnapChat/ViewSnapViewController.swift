@@ -18,12 +18,17 @@ class ViewSnapViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var longerText: UITextView!
+    
     var snap = Snap()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        label.text = snap.descrip
+     // nasledujici radek Label jsem nahradil textovym polem ktere zobrazi delsi text
+     // label.text = snap.descrip
+     
+        longerText.text = snap.descrip
         
         imageView.sd_setImage(with: URL(string: snap.imageURL))
         

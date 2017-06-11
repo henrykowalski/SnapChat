@@ -1,3 +1,5 @@
+# puvodni verzi 1.0 se snazim vylepsit
+# verze 1.1 : rekne to ze mas snap nebo to udela nejaky zvuk... nevim jestli to bude fungovat i na pozadi, dale chci zvetsit textove pole pro posilani delsi zpravy... zmensim trosku fotku...
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
